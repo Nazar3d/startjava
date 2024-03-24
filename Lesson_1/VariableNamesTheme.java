@@ -8,20 +8,20 @@ public class VariableNamesTheme {
         System.out.println("цифра = " + digit);
 
         //сумма чисел
-        int sumOfNumbers = 18;
-        System.out.println("сумма чисел = " + sumOfNumbers);
+        int sumNumbers = 18;
+        System.out.println("сумма чисел = " + sumNumbers);
 
         //произведение цифр
-        int productOfDigits = 81;
-        System.out.println("произведение цифр = " + productOfDigits);
+        int productDigits = 81;
+        System.out.println("произведение цифр = " + productDigits);
 
         //максимальное число
-        int maximumNumber = 999;
-        System.out.println("максимальное число = " + maximumNumber);
+        int maxNumber = 999;
+        System.out.println("максимальное число = " + maxNumber);
 
         //количество десятков
-        int numberOfTens = 2;
-        System.out.println("количество десятков = " + numberOfTens);
+        int numberTens = 2;
+        System.out.println("количество десятков = " + numberTens);
 
         //вес собаки
         int dogWeight = 24;
@@ -48,8 +48,8 @@ public class VariableNamesTheme {
         System.out.println("тип сообщения = " + messageType);
 
         //число нулей
-        int numberOfZeros = 1;
-        System.out.println("число нулей = " + numberOfZeros);
+        int numberZeros = 1;
+        System.out.println("число нулей = " + numberZeros);
 
         //уникальное число
         int uniqueNumber = 4554;
@@ -60,20 +60,20 @@ public class VariableNamesTheme {
         System.out.println("случайное число = " + randomNumber);
 
         //математическое выражение
-        String mathematicalExpression = "999 + 111 = 1110";
-        System.out.println("математическое выражение = " + mathematicalExpression);
+        String mathExpression = "999 + 111 = 1110";
+        System.out.println("математическое выражение = " + mathExpression);
 
         //выбор (чего-либо)
-        int selectionOfSomething = 10;
-        System.out.println("выбор = " + selectionOfSomething);
+        int selection = 10;
+        System.out.println("выбор = " + selection);
 
         //счет (в игре)
-        int numberOfPoints = 5121;
-        System.out.println("количество очков = " + numberOfPoints);
+        int numberPoints = 5121;
+        System.out.println("количество очков = " + numberPoints);
 
         //максимальная длина (строки)
-        int maximumLineLengthMenu = 900000;
-        System.out.println("максимальная длина строки = " + maximumLineLengthMenu);
+        int maxLineLength = 900000;
+        System.out.println("максимальная длина строки = " + maxLineLength);
 
         //пункт меню
         int item = 120;
@@ -88,12 +88,12 @@ public class VariableNamesTheme {
         System.out.println("дата начала = " + startDate);
 
         //окончание диапазона
-        int endOfRange = 20;
-        System.out.println("окончание диапазона = " + endOfRange);
+        int endRange = 20;
+        System.out.println("окончание диапазона = " + endRange);
 
         //полное имя работника месяца
-        String fullNameOfEmployeeMonth = "Sergey Dmitrievich Goremykin";
-        System.out.println("полное имя работника месяца = " + fullNameOfEmployeeMonth);
+        String fullNameEmployeeMonth = "Sergey Dmitrievich Goremykin";
+        System.out.println("полное имя работника месяца = " + fullNameEmployeeMonth);
 
         //заголовок электронной книги
         int eBookTitle = 9;
@@ -116,24 +116,23 @@ public class VariableNamesTheme {
         System.out.println("путь до файла = " + filePath);
 
         //количество чисел в каждой строке
-        int numberOfNumbersInEachLine = 80;
-        System.out.println("количество чисел в каждой строке = " + numberOfNumbersInEachLine + "\n\n");
-
+        int numberNumbersInEachLine = 80;
+        System.out.println("количество чисел в каждой строке = " + numberNumbersInEachLine + "\n\n");
 
         //2. boolean-переменные
          System.out.println("2. Boolean-переменные\n");
 
         //сотни равны?
-        boolean hundredsAreEqual = true;
-        System.out.println("сотни равны = " + hundredsAreEqual);
+        boolean isHundredsEqual = true;
+        System.out.println("сотни равны = " + isHundredsEqual);
 
         //компьютер включен?
-        boolean theComputerIsTurned = true;
-        System.out.println("компьютер включен = " + theComputerIsTurned);
+        boolean isComputerTurned = true;
+        System.out.println("компьютер включен = " + isComputerTurned);
 
         //есть равные цифры?
-        boolean onThereAreEqualNumbers = false;
-        System.out.println("есть равные цифры = " + onThereAreEqualNumbers);
+        boolean hasDigitsEqual = false;
+        System.out.println("есть равные цифры = " + hasDigitsEqual);
 
         //(что-либо) создано?
         boolean created = true;
@@ -152,13 +151,12 @@ public class VariableNamesTheme {
         System.out.println("новый = " + news);
 
         //электронная почта действительная?
-        boolean emailValid = true;
-        System.out.println("электронная почта действительная = " + emailValid);
+        boolean isEmailValid = true;
+        System.out.println("электронная почта действительная = " + isEmailValid);
 
         //имеются уникальные строки?
-        boolean thereAreUniqueStrings = false;
-        System.out.println("имеются уникальные строки = " + thereAreUniqueStrings + "\n\n");
-
+        boolean hasUniqueStrings = false;
+        System.out.println("имеются уникальные строки = " + hasUniqueStrings + "\n\n");
 
         //3. Аббревиатуры
         System.out.println("3. Аббревиатуры\n");
@@ -168,27 +166,27 @@ public class VariableNamesTheme {
         System.out.println("старый universally unique identifier = " + oldUuid);
 
         //производитель оперативной памяти
-        String manufacturerOfRam = "hyperX";
-        System.out.println("производитель оперативной памяти = " + manufacturerOfRam);
+        String manufacturerRam = "hyperX";
+        System.out.println("производитель оперативной памяти = " + manufacturerRam);
 
         //емкость жесткого диска
-        String hardDiskCapacity = "4тб";
-        System.out.println("емкость жесткого диска = " + hardDiskCapacity);
+        String hddCapacity = "4тб";
+        System.out.println("емкость жесткого диска = " + hddCapacity);
 
         //протокол передачи гипертекста
         String http = "протокол передачи гипертекста";
         System.out.println("протокол передачи гипертекста = " + http);
 
         //сокращенный uniform resource locator
-        String abbreviatedUrl = "единый локатор ресурсов";
+        String shortUrl = "единый локатор ресурсов";
         System.out.println("сокращенный uniform resource locator = " + abbreviatedUrl);
 
         //новый идентификатор клиента
-        String newClientId = "Идентификатор клиента — это уникальный код, который присваивается каждому пользователю в системе";
+        String newСid = "Идентификатор клиента — это уникальный код, который присваивается каждому пользователю в системе";
         System.out.println("новый идентификатор клиента = " + newClientId);
 
         //кодировка american standard code for information interchange
-        String encodingAscfi = "американский стандартный код для обмена информацией";
-        System.out.println("кодировка american standard code for information interchange = " + encodingAscfi);
+        String encodingAscii = "американский стандартный код для обмена информацией";
+        System.out.println("кодировка american standard code for information interchange = " + encodingAscii);
     }
 }
