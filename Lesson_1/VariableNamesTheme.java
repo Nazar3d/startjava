@@ -36,7 +36,7 @@ public class VariableNamesTheme {
         System.out.println("процент по вкладу = " + depositPercentage + "%");
 
         //(переменная хранит символ) &
-        char symbol = 0026;
+        char symbol = '&';
         System.out.println("символ = " + symbol);
 
         //код ошибки
@@ -135,20 +135,20 @@ public class VariableNamesTheme {
         System.out.println("есть равные цифры = " + hasDigitsEqual);
 
         //(что-либо) создано?
-        boolean created = true;
-        System.out.println("создано = " + created);
+        boolean isCreated = true;
+        System.out.println("создано = " + isCreated);
 
         //(что-либо) пустое?
-        boolean empty = false;
-        System.out.println("пусто = " + empty);
+        boolean isEmpty = false;
+        System.out.println("пусто = " + isEmpty);
 
         //(что-либо) активное?
-        boolean active = false;
-        System.out.println("активный = " + active);
+        boolean hasActive = false;
+        System.out.println("активный = " + hasActive);
 
         //(что-либо) новое?
-        boolean news = true;
-        System.out.println("новый = " + news);
+        boolean isNew = true;
+        System.out.println("новый = " + isNew);
 
         //электронная почта действительная?
         boolean isEmailValid = true;
@@ -166,8 +166,8 @@ public class VariableNamesTheme {
         System.out.println("старый universally unique identifier = " + oldUuid);
 
         //производитель оперативной памяти
-        String manufacturerRam = "hyperX";
-        System.out.println("производитель оперативной памяти = " + manufacturerRam);
+        String ramManufacturer = "hyperX";
+        System.out.println("производитель оперативной памяти = " + ramManufacturer);
 
         //емкость жесткого диска
         String hddCapacity = "4тб";
@@ -179,11 +179,11 @@ public class VariableNamesTheme {
 
         //сокращенный uniform resource locator
         String shortUrl = "единый локатор ресурсов";
-        System.out.println("сокращенный uniform resource locator = " + abbreviatedUrl);
+        System.out.println("сокращенный uniform resource locator = " + shortUrl);
 
         //новый идентификатор клиента
-        String newСid = "Идентификатор клиента — это уникальный код, который присваивается каждому пользователю в системе";
-        System.out.println("новый идентификатор клиента = " + newClientId);
+        String newCid = "Идентификатор клиента — это уникальный код, который присваивается каждому пользователю в системе";
+        System.out.println("новый идентификатор клиента = " + newCid);
 
         //кодировка american standard code for information interchange
         String encodingAscii = "американский стандартный код для обмена информацией";

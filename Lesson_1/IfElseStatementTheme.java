@@ -82,38 +82,44 @@ public class IfElseStatementTheme {
         int d = 123;
         int f = 223;
 
-        int numberOnesD = ( d / 1 ) % 10;
-        int numberTensD = ( d / 10 ) % 10;
-        int numberHundredsD = ( d / 100 ) % 10;
+        int numberOnesD = d % 10;
+        int numberTensD = (d / 10) % 10;
+        int numberHundredsD = (d / 100) % 10;
 
-        int numberOnesF = ( f / 1 ) % 10;
-        int numberTensF = ( f / 10 ) % 10;
-        int numberHundredsF = ( f / 100 ) % 10;
+        int numberOnesF = f % 10;
+        int numberTensF = (f / 10) % 10;
+        int numberHundredsF = (f / 100) % 10;
 
         if(numberHundredsD == numberHundredsF) {
             if(numberTensD == numberTensF) {
                 if(numberOnesD == numberOnesF){
                     System.out.println("В числах " + d + " и " + f + " все разряды совпадают\n");
                 } else {
-                    System.out.println("В числах " + d + " и " + f + " разряды 100 (" + numberHundredsD + ") и 10 (" + numberTensD + ") совпадают\n");
+                    System.out.println("В числах " + d + " и " + f + " разряды 100 ("
+                     + numberHundredsD + ") и 10 (" + numberTensD + ") совпадают\n");
                 }
             } else {
                 if(numberOnesD == numberOnesF){
-                    System.out.println("В числах " + d + " и " + f + " разряды 100 (" + numberHundredsD + ") и 1 (" + numberOnesD + ") совпадают\n");
+                    System.out.println("В числах " + d + " и " + f + " разряды 100 ("
+                     + numberHundredsD + ") и 1 (" + numberOnesD + ") совпадают\n");
                 } else {
-                    System.out.println("В числах " + d + " и " + f + " разряд 100 (" + numberHundredsD + ") совпадает\n");
+                    System.out.println("В числах " + d + " и " + f + " разряд 100 ("
+                     + numberHundredsD + ") совпадает\n");
                 }
             }
         } else {
             if(numberTensD == numberTensF) {
                 if(numberOnesD == numberOnesF){
-                    System.out.println("В числах " + d + " и " + f + " разряды 10 (" + numberTensD + ") и 1 (" + numberOnesD + ") совпадают\n");
+                    System.out.println("В числах " + d + " и " + f + " разряды 10 ("
+                     + numberTensD + ") и 1 (" + numberOnesD + ") совпадают\n");
                 } else {
-                    System.out.println("В числах " + d + " и " + f + " разряд 10 (" + numberTensD + ") совпадает\n");
+                    System.out.println("В числах " + d + " и " + f + " разряд 10 ("
+                     + numberTensD + ") совпадает\n");
                 }
             } else {
                 if(numberOnesD == numberOnesF){
-                    System.out.println("В числах " + d + " и " + f + " разряд 1 (" + numberOnesD + ") совпадает\n");
+                    System.out.println("В числах " + d + " и " + f + " разряд 1 (" 
+                        + numberOnesD + ") совпадает\n");
                 } else {
                     System.out.println("В числах " + d + " и " + f + " разряды не совпадают\n");
                 }
