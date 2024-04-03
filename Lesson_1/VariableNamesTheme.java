@@ -123,16 +123,16 @@ public class VariableNamesTheme {
          System.out.println("2. Boolean-переменные\n");
 
         //сотни равны?
-        boolean isHundredsEqual = true;
-        System.out.println("сотни равны = " + isHundredsEqual);
+        boolean isEqualHundreds = true;
+        System.out.println("сотни равны = " + isEqualHundreds);
 
         //компьютер включен?
-        boolean isComputerTurned = true;
-        System.out.println("компьютер включен = " + isComputerTurned);
+        boolean isTurnedComputer = true;
+        System.out.println("компьютер включен = " + isTurnedComputer);
 
         //есть равные цифры?
-        boolean hasDigitsEqual = false;
-        System.out.println("есть равные цифры = " + hasDigitsEqual);
+        boolean hasEqualDigits = false;
+        System.out.println("есть равные цифры = " + hasEqualDigits);
 
         //(что-либо) создано?
         boolean isCreated = true;
@@ -151,8 +151,8 @@ public class VariableNamesTheme {
         System.out.println("новый = " + isNew);
 
         //электронная почта действительная?
-        boolean isEmailValid = true;
-        System.out.println("электронная почта действительная = " + isEmailValid);
+        boolean isValidEmail = true;
+        System.out.println("электронная почта действительная = " + isValidEmail);
 
         //имеются уникальные строки?
         boolean hasUniqueStrings = false;

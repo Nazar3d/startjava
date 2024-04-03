@@ -11,8 +11,6 @@ public class IfElseStatementTheme {
             System.out.println("Пол - Мужской");
         }
 
-        
-
         int age = 20;
 
         if(age > 18) {
@@ -28,7 +26,6 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("Вы выше 84.3% мужчин в России");
         }
-
 
         char firstLetterName = "Имя".charAt(0);
 
@@ -62,83 +59,63 @@ public class IfElseStatementTheme {
         if(c == 0) {
             System.out.println("число " + c + " = 0\n");
         } else {
-                if(c % 2 == 0) {
-                    if (c > 0) {
-                        System.out.println(c + " является положительным и четным\n");
-                    } else {
-                        System.out.println(c + " является отрицательным и четным\n");
-                    }
-                } else {
-                if (c > 0) {
-                        System.out.println(c + " является положительным и нечетным\n");
-                    } else {
-                        System.out.println(c + " является отрицательным и нечетным\n");
-                    }
-                }
+            if(c > 0) {
+                System.out.print(c + " является положительным и ");
+            } else {
+                System.out.print(c + " является отрицательным и ");
+            }
+            if(c % 2 == 0) {
+                System.out.println("четным\n");
+            } else {
+                System.out.println("нечетным\n");
+            }
         }
+
         //4. Поиск одинаковых цифр в числах
             System.out.println("4. Поиск одинаковых цифр в числах\n");
 
-        int d = 123;
-        int f = 223;
+        a = 123;
+        b = 225;
 
-        int numberOnesD = d % 10;
-        int numberTensD = (d / 10) % 10;
-        int numberHundredsD = (d / 100) % 10;
+        int numberOnesA = a % 10;
+        int numberTensA = (a / 10) % 10;
+        int numberHundredsA = (a / 100) % 10;
 
-        int numberOnesF = f % 10;
-        int numberTensF = (f / 10) % 10;
-        int numberHundredsF = (f / 100) % 10;
+        int numberOnesB = b % 10;
+        int numberTensB = (b / 10) % 10;
+        int numberHundredsB = (b / 100) % 10;
 
-        if(numberHundredsD == numberHundredsF) {
-            if(numberTensD == numberTensF) {
-                if(numberOnesD == numberOnesF){
-                    System.out.println("В числах " + d + " и " + f + " все разряды совпадают\n");
-                } else {
-                    System.out.println("В числах " + d + " и " + f + " разряды 100 ("
-                     + numberHundredsD + ") и 10 (" + numberTensD + ") совпадают\n");
-                }
-            } else {
-                if(numberOnesD == numberOnesF){
-                    System.out.println("В числах " + d + " и " + f + " разряды 100 ("
-                     + numberHundredsD + ") и 1 (" + numberOnesD + ") совпадают\n");
-                } else {
-                    System.out.println("В числах " + d + " и " + f + " разряд 100 ("
-                     + numberHundredsD + ") совпадает\n");
-                }
-            }
+        System.out.println("В числах " + a + " и " + b );
+
+        if (numberHundredsA != numberHundredsB & numberTensA != numberTensB & numberOnesA != numberOnesB) {
+            System.out.println(" разряды не совпадают\n");
+        } else if(numberHundredsA == numberHundredsB & numberTensA == numberTensB & numberOnesA == numberOnesB){
+                System.out.println(" все разряды совпадают\n");
         } else {
-            if(numberTensD == numberTensF) {
-                if(numberOnesD == numberOnesF){
-                    System.out.println("В числах " + d + " и " + f + " разряды 10 ("
-                     + numberTensD + ") и 1 (" + numberOnesD + ") совпадают\n");
-                } else {
-                    System.out.println("В числах " + d + " и " + f + " разряд 10 ("
-                     + numberTensD + ") совпадает\n");
-                }
-            } else {
-                if(numberOnesD == numberOnesF){
-                    System.out.println("В числах " + d + " и " + f + " разряд 1 (" 
-                        + numberOnesD + ") совпадает\n");
-                } else {
-                    System.out.println("В числах " + d + " и " + f + " разряды не совпадают\n");
-                }
+            if(numberHundredsA == numberHundredsB) {
+                System.out.print("Разряд 100 (" + numberHundredsA + ") совпадает\n");
+            }
+            if(numberTensA == numberTensB) {
+                System.out.print("Pазряд 10 (" + numberTensA + ") совпадает\n");
+            }
+            if(numberOnesA == numberOnesB) {
+                System.out.print("Pазряд 1 (" + numberOnesA + ") совпадает\n");
             }
         }
 
         //5. Определение символа по его коду
-        System.out.println("5. Определение символа по его коду\n");
+        System.out.println("\n5. Определение символа по его коду\n");
 
-        char simbol = '\u0031';
+        char symbol = '\u0031';
 
-        if(simbol >= 'A' & simbol <= 'Z'){
-            System.out.println("символ " + simbol + " является большой буквой\n");
-        } else if(simbol >= 'a' & simbol <= 'z'){
-            System.out.println("символ " + simbol + " является маленькой буквой\n");
-        } else if(simbol >= '0' & simbol <= '9'){
-            System.out.println("символ " + simbol + " является цифрой\n");
+        if(symbol >= 'A' & symbol <= 'Z') {
+            System.out.println("символ " + symbol + " является большой буквой\n");
+        } else if(symbol >= 'a' & symbol <= 'z') {
+            System.out.println("символ " + symbol + " является маленькой буквой\n");
+        } else if(symbol >= '0' & symbol <= '9') {
+            System.out.println("символ " + symbol + " является цифрой\n");
         } else {
-            System.out.println("символ " + simbol + " не буква и не цифра\n");
+            System.out.println("символ " + symbol + " не буква и не цифра\n");
         }
 
         //6. Подсчет суммы вклада и начисленных банком %
@@ -147,139 +124,53 @@ public class IfElseStatementTheme {
         int bank = 400000;
 
         if(bank < 100000) {
-            System.out.println("Сумма вклада: " + bank);
             bank = bank / 100 * 5;
-            System.out.println("сумма начисленного %: " + bank);
             bank = bank / 5 * 100 + bank;
-            System.out.println("Итоговая сумма с %: " + bank + "\n");
-        } else if(100000 <= bank & bank <= 300000){
-            System.out.println("Сумма вклада: " + bank);
+        } else if(100000 <= bank & bank <= 300000) {
             bank = bank / 100 * 7;
-            System.out.println("сумма начисленного %: " + bank);
             bank = bank / 7 * 100 + bank;
-            System.out.println("Итоговая сумма с %: " + bank + "\n");
-        } else if(300000 < bank){
-            System.out.println("Сумма вклада: " + bank);
+        } else if(300000 < bank) {
             bank = bank / 100 * 10;
-            System.out.println("сумма начисленного %: " + bank);
             bank = bank / 10 * 100 + bank;
-            System.out.println("Итоговая сумма с %: " + bank + "\n");
         }
+        System.out.println("Сумма вклада: " + bank);
+        System.out.println("сумма начисленного %: " + bank);
+        System.out.println("Итоговая сумма с %: " + bank + "\n");
 
         //7. Определение оценки по предметам
         System.out.println("7. Определение оценки по предметам\n");
         int history = 59;
         int programming = 92;
+        float percentageSubject = 0F;
+        float gradeSubjects = 0F;
 
+        percentageSubject = programming + history;
+        percentageSubject /= 2F;
         if (history <= 60) {
-            System.out.print("История - 2, ");
-            if (programming <= 60) {
-                System.out.println("программирование - 2");
-                System.out.println("Средний балл оценок по предметам - 2");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 60 & programming <= 73) {
-                System.out.println("программирование - 3");
-                System.out.println("Средний балл оценок по предметам - 2.5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 73 & programming <= 91) {
-                System.out.println("программирование - 4");
-                System.out.println("Средний балл оценок по предметам - 3");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 91 & programming <= 100) {
-                System.out.println("программирование - 5");
-                System.out.println("Средний балл оценок по предметам - 3.5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            }
-        } else if (history > 60 & history <= 73) {
-            System.out.print("История - 3, ");
-            if (programming <= 60) {
-                System.out.println("программирование - 2");
-                System.out.println("Средний балл оценок по предметам - 2.5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 60 & programming <= 73) {
-                System.out.println("программирование - 3");
-                System.out.println("Средний балл оценок по предметам - 3");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 73 & programming <= 91) {
-                System.out.println("программирование - 4");
-                System.out.println("Средний балл оценок по предметам - 3.5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 91 & programming <= 100) {
-                System.out.println("программирование - 5");
-                System.out.println("Средний балл оценок по предметам - 4");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            }
-        } else if (history > 73 & history <= 91) {
-            System.out.print("История - 4, ");
-            if (programming <= 60) {
-                System.out.println("программирование - 2");
-                System.out.println("Средний балл оценок по предметам - 3");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 60 & programming <= 73) {
-                System.out.println("программирование - 3");
-                System.out.println("Средний балл оценок по предметам - 3.5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 73 & programming <= 91) {
-                System.out.println("программирование - 4");
-                System.out.println("Средний балл оценок по предметам - 4");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 91 & programming <= 100) {
-                System.out.println("программирование - 5");
-                System.out.println("Средний балл оценок по предметам - 4.5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            }
-        } else if (history > 91 & history <= 100) {
-            System.out.print("История - 5, ");
-            if (programming <= 60) {
-                System.out.println("программирование - 2");
-                System.out.println("Средний балл оценок по предметам - 3.5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 60 & programming <= 73) {
-                System.out.println("программирование - 3");
-                System.out.println("Средний балл оценок по предметам - 4");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 73 & programming <= 91) {
-                System.out.println("программирование - 4");
-                System.out.println("Средний балл оценок по предметам - 4.5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            } else if (programming > 91 & programming <= 100) {
-                System.out.println("программирование - 5");
-                System.out.println("Средний балл оценок по предметам - 5");
-                programming += history;
-                programming /= 2;
-                System.out.println("средний % по предметам - " + programming + "\n");
-            }
+            history = 2;
+        } else if(history > 60 & history <= 73) {
+            history = 3;
+        } else if(history > 73 & history <= 91) {
+            history = 4;
+        } else if(history > 91 & history <= 100) {
+            history = 5;
         }
+        if (programming <= 60) {
+            programming = 2;
+        } else if(programming > 60 & programming <= 73) {
+            programming = 3;
+        } else if(programming > 73 & programming <= 91) {
+            programming = 4;
+        } else if(programming > 91 & programming <= 100) {
+            programming = 5;
+        }
+        gradeSubjects = programming + history;
+        gradeSubjects /= 2F;
+
+        System.out.print("История - " + history + ", ");
+        System.out.println("программирование - " + programming);
+        System.out.println("Средний балл оценок по предметам - " + gradeSubjects);
+        System.out.println("средний % по предметам - " + percentageSubject + "\n");
 
         //8. Расчет годовой прибыли
         System.out.println("8. Расчет годовой прибыли\n");
@@ -290,11 +181,11 @@ public class IfElseStatementTheme {
         int profitForYear = monthlySaleGoods - rentRoom - costProduct;
         profitForYear *= 12;
         
-        if (profitForYear > 0){
+        if(profitForYear > 0) {
             System.out.println("Прибыль за год: +" + profitForYear + " руб.");
-        }else if (profitForYear < 0){
+        }else if(profitForYear < 0) {
             System.out.println("Прибыль за год: " + profitForYear + " руб.");
-        }else if (profitForYear == 0){
+        }else if(profitForYear == 0) {
             System.out.println("Прибыль за год: " + profitForYear + " руб.");
         }
     }

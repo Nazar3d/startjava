@@ -54,24 +54,28 @@ public class VariableTheme {
         System.out.println("тип - byte\n");
         System.out.println("первоначальное значение - " + maxByte++);
         System.out.println("значение после инкремента на единицу - " + maxByte--);
+        maxByte--;
         System.out.println("значение после декремента на единицу - " + maxByte + "\n");
 
         //short
         System.out.println("тип - short\n");
         System.out.println("первоначальное значение - " + maxShort++);
         System.out.println("значение после инкремента на единицу - " + maxShort--);
+        maxShort--;
         System.out.println("значение после декремента на единицу - " + maxShort + "\n");
 
         //int
         System.out.println("тип - int\n");
         System.out.println("первоначальное значение - " + maxInt++);
         System.out.println("значение после инкремента на единицу - " + maxInt--);
+        maxInt--;
         System.out.println("значение после декремента на единицу - " + maxInt + "\n");;
 
         //long
         System.out.println("тип - long\n");
         System.out.println("первоначальное значение - " + maxLong++);
         System.out.println("значение после инкремента на единицу - " + maxLong--);
+        maxLong--;
         System.out.println("значение после декремента на единицу - " + maxLong + "\n\n");
 
         //5. Перестановка значений переменных
@@ -110,11 +114,11 @@ public class VariableTheme {
         char tilde = '~';
 
         System.out.println("Значение кодов ASCII для символов:");
-        System.out.println(dollar + " - " + (int)dollar);
-        System.out.println(asterisk + " - " + (int)asterisk);
-        System.out.println(atSign + " - " + (int)atSign);
-        System.out.println(verticalBar + " - " + (int)verticalBar);
-        System.out.println(tilde + " - " + (int)tilde + "\n\n");
+        System.out.println(dollar + " - " + (int) dollar);
+        System.out.println(asterisk + " - " + (int) asterisk);
+        System.out.println(atSign + " - " + (int) atSign);
+        System.out.println(verticalBar + " - " + (int) verticalBar);
+        System.out.println(tilde + " - " + (int) tilde + "\n\n");
         
         //7. Вывод в консоль ASCII-арт Дюка
         System.out.println("7. Вывод в консоль ASCII-арт Дюка\n");
@@ -130,7 +134,7 @@ public class VariableTheme {
         System.out.println("   " + slash + underscore + leftParenthesis + " " + rightParenthesis + backslash);
         System.out.println("  " + slash + "      " + backslash + " ");
         System.out.println(" " + slash + underscore + underscore + underscore + underscore + slash + backslash
-                            + underscore + underscore + backslash + "\n\n");
+                + underscore + underscore + backslash + "\n\n");
 
         //8. Вывод количества сотен, десятков и единиц числа
         System.out.println("8. Вывод количества сотен, десятков и единиц числа\n");;
