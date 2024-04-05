@@ -54,29 +54,29 @@ public class VariableTheme {
         System.out.println("тип - byte\n");
         System.out.println("первоначальное значение - " + maxByte++);
         System.out.println("значение после инкремента на единицу - " + maxByte--);
-        maxByte--;
-        System.out.println("значение после декремента на единицу - " + maxByte + "\n");
+        //maxByte--;
+        System.out.println("значение после декремента на единицу - " + --maxByte + "\n");
 
         //short
         System.out.println("тип - short\n");
         System.out.println("первоначальное значение - " + maxShort++);
         System.out.println("значение после инкремента на единицу - " + maxShort--);
-        maxShort--;
-        System.out.println("значение после декремента на единицу - " + maxShort + "\n");
+        //maxShort--;
+        System.out.println("значение после декремента на единицу - " + --maxShort + "\n");
 
         //int
         System.out.println("тип - int\n");
         System.out.println("первоначальное значение - " + maxInt++);
         System.out.println("значение после инкремента на единицу - " + maxInt--);
-        maxInt--;
-        System.out.println("значение после декремента на единицу - " + maxInt + "\n");;
+        //maxInt--;
+        System.out.println("значение после декремента на единицу - " + --maxInt + "\n");;
 
         //long
         System.out.println("тип - long\n");
         System.out.println("первоначальное значение - " + maxLong++);
         System.out.println("значение после инкремента на единицу - " + maxLong--);
-        maxLong--;
-        System.out.println("значение после декремента на единицу - " + maxLong + "\n\n");
+        //maxLong--;
+        System.out.println("значение после декремента на единицу - " + --maxLong + "\n\n");
 
         //5. Перестановка значений переменных
         System.out.println("5. Перестановка значений переменных\n");
@@ -132,7 +132,7 @@ public class VariableTheme {
         System.out.println("     " + slash + backslash);
         System.out.println("    " + slash + "  " + backslash);
         System.out.println("   " + slash + underscore + leftParenthesis + " " + rightParenthesis + backslash);
-        System.out.println("  " + slash + "      " + backslash + " ");
+        System.out.println("  " + slash + "      " + backslash);
         System.out.println(" " + slash + underscore + underscore + underscore + underscore + slash + backslash
                 + underscore + underscore + backslash + "\n\n");
 
