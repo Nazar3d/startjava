@@ -45,38 +45,34 @@ public class VariableTheme {
         //4. Вывод min и max значений целых числовых типов
         System.out.println("4. Вывод min и max значений целых числовых типов\n");
 
-        byte maxByte = 127;
-        short maxShort = 32767;
-        int maxInt =  2147483647;
-        long maxLong = 9223372036854775807L;
+        byte maxByte = 127, maxByteInc = maxByte, maxByteDec = maxByte;
+        short maxShort = 32767, maxShortInc = maxShort, maxShortDec = maxShort;
+        int maxInt =  2147483647, maxIntInc = maxInt, maxIntDec = maxInt;
+        long maxLong = 9223372036854775807L, maxLongInc = maxLong, maxLongDec = maxLong;
 
         //byte
         System.out.println("тип - byte\n");
-        System.out.println("первоначальное значение - " + maxByte++);
-        System.out.println("значение после инкремента на единицу - " + maxByte--);
-        //maxByte--;
-        System.out.println("значение после декремента на единицу - " + --maxByte + "\n");
+        System.out.println("первоначальное значение - " + maxByte);
+        System.out.println("значение после инкремента на единицу - " + ++maxByteInc);
+        System.out.println("значение после декремента на единицу - " + --maxByteDec + "\n");
 
         //short
         System.out.println("тип - short\n");
-        System.out.println("первоначальное значение - " + maxShort++);
-        System.out.println("значение после инкремента на единицу - " + maxShort--);
-        //maxShort--;
-        System.out.println("значение после декремента на единицу - " + --maxShort + "\n");
+        System.out.println("первоначальное значение - " + maxShort);
+        System.out.println("значение после инкремента на единицу - " + ++maxShortInc);
+        System.out.println("значение после декремента на единицу - " + --maxShortDec + "\n");
 
         //int
         System.out.println("тип - int\n");
-        System.out.println("первоначальное значение - " + maxInt++);
-        System.out.println("значение после инкремента на единицу - " + maxInt--);
-        //maxInt--;
-        System.out.println("значение после декремента на единицу - " + --maxInt + "\n");;
+        System.out.println("первоначальное значение - " + maxInt);
+        System.out.println("значение после инкремента на единицу - " + ++maxIntInc);
+        System.out.println("значение после декремента на единицу - " + --maxIntDec + "\n");;
 
         //long
         System.out.println("тип - long\n");
-        System.out.println("первоначальное значение - " + maxLong++);
-        System.out.println("значение после инкремента на единицу - " + maxLong--);
-        //maxLong--;
-        System.out.println("значение после декремента на единицу - " + --maxLong + "\n\n");
+        System.out.println("первоначальное значение - " + maxLong);
+        System.out.println("значение после инкремента на единицу - " + ++maxLongInc);
+        System.out.println("значение после декремента на единицу - " + --maxLongDec + "\n\n");
 
         //5. Перестановка значений переменных
         System.out.println("5. Перестановка значений переменных\n");

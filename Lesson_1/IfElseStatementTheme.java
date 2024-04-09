@@ -121,55 +121,49 @@ public class IfElseStatementTheme {
         //6. Подсчет суммы вклада и начисленных банком %
         System.out.println("6. Подсчет суммы вклада и начисленных банком %\n");
 
-        int deposit = 300001;
-        int percDeposit = 0;
+        int deposit = 300000;
         
-        System.out.println("Сумма вклада: " + deposit);
-        if(deposit < 100000) {
-            percDeposit = 5;
-        } else if(100000 <= deposit & deposit <= 300000) {
-            percDeposit = 7;
+        int rate = 5;
+        if(deposit >= 100000 && deposit <= 300000) {
+            rate = 7;
         } else if(300000 < deposit) {
-            percDeposit = 10;
+            rate = 10;
         }
-        percDeposit = deposit / 100 * percDeposit;
-        deposit = deposit + percDeposit;
+        int percent = deposit / 100 * rate;
+        rate = deposit + percent;
 
-        System.out.println("сумма начисленного %: " + percDeposit);
-        System.out.println("Итоговая сумма с %: " + deposit + "\n");
+        System.out.println("Сумма вклада: " + deposit);
+        System.out.println("сумма начисленного %: " + percent);
+        System.out.println("Итоговая сумма с %: " + rate + "\n");
 
         //7. Определение оценки по предметам
         System.out.println("7. Определение оценки по предметам\n");
-        int precHistory = 59;
-        int precProgramming = 92;
-
-        float percentageSubject = (precProgramming + precHistory) / 2F;
-
-        if (precHistory <= 60) {
-            precHistory = 2;
-        } else if(precHistory > 60 & precHistory <= 73) {
-            precHistory = 3;
-        } else if(precHistory > 73 & precHistory <= 91) {
-            precHistory = 4;
-        } else {
-            precHistory = 5;
+        int historyPercentage = 59;
+        int programmingPercentage = 92;
+        
+        int history = 2;
+        if(historyPercentage > 60 && historyPercentage <= 73) {
+            history = 3;
+        } else if(historyPercentage > 73 && historyPercentage <= 91) {
+            history = 4;
+        } else if(historyPercentage > 91 && historyPercentage <= 100) {
+            history = 5;
         }
-    
-        if (precProgramming <= 60) {
-            precProgramming = 2;
-        } else if(precProgramming > 60 & precProgramming <= 73) {
-            precProgramming = 3;
-        } else if(precProgramming > 73 & precProgramming <= 91) {
-            precProgramming = 4;
-        } else {
-            precProgramming = 5;
+        int programming = 2;
+        if(programmingPercentage > 60 && programmingPercentage <= 73) {
+            programming = 3;
+        } else if(programmingPercentage > 73 && programmingPercentage <= 91) {
+            programming = 4;
+        } else if(programmingPercentage > 91 && programmingPercentage <= 100) {
+            programming = 5;
         }
-        float gradeSubjects = (precProgramming + precHistory) / 2F;
+        float gpa = (programming + history) / 2F;
+        float avgPercentage = (programmingPercentage + historyPercentage) / 2F;
 
-        System.out.print("История - " + precHistory + ", ");
-        System.out.println("программирование - " + precProgramming);
-        System.out.println("Средний балл оценок по предметам - " + gradeSubjects);
-        System.out.println("средний % по предметам - " + percentageSubject + "\n");
+        System.out.print("История - " + history + ", ");
+        System.out.println("программирование - " + programming);
+        System.out.println("Средний балл оценок по предметам - " + gpa);
+        System.out.println("средний % по предметам - " + avgPercentage + "\n");
 
         //8. Расчет годовой прибыли
         System.out.println("8. Расчет годовой прибыли\n");
@@ -181,7 +175,7 @@ public class IfElseStatementTheme {
         
         if(profitForYear > 0) {
             System.out.println("Прибыль за год: +" + profitForYear + " руб.");
-        } else if(profitForYear <= 0) {
+        } else {
             System.out.println("Прибыль за год: " + profitForYear + " руб.");
         }
     }
